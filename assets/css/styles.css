@@ -3,6 +3,7 @@
   --cream: #FFEBD3;
   --teal: #9BCEC1;
   --blue: #67A2C5;
+  --peach-soft: #ffd9cf;
 
   --peach-dark: #f0998a;
   --blue-dark: #4d87ab;
@@ -59,7 +60,7 @@ img, svg { max-width: 100%; display: block; }
 }
 
 .section { padding: 72px 0; }
-.section--alt { background: var(--cream-deep); }
+.section--alt { background: var(--peach-soft); }
 .section--tint { background: linear-gradient(180deg, var(--white) 0%, var(--cream) 100%); }
 
 /* ---------- Buttons ---------- */
@@ -77,10 +78,10 @@ img, svg { max-width: 100%; display: block; }
 .btn:hover { transform: translateY(-2px); }
 .btn--primary { background: var(--peach); color: var(--ink); }
 .btn--primary:hover { background: var(--peach-dark); }
-.btn--blue { background: var(--blue); color: var(--white); }
-.btn--blue:hover { background: var(--blue-dark); }
-.btn--ghost { background: transparent; border-color: var(--blue); color: var(--blue-dark); }
-.btn--ghost:hover { background: var(--blue); color: var(--white); }
+.btn--blue { background: var(--peach); color: var(--ink); }
+.btn--blue:hover { background: var(--peach-dark); }
+.btn--ghost { background: transparent; border-color: var(--peach); color: var(--peach-dark); }
+.btn--ghost:hover { background: var(--peach); color: var(--ink); }
 
 /* ---------- Header / Nav ---------- */
 .site-header {
@@ -107,20 +108,13 @@ img, svg { max-width: 100%; display: block; }
 
 /* ---------- Hero ---------- */
 .hero {
-  background: radial-gradient(1200px 500px at 80% -10%, var(--teal) 0%, transparent 60%),
-              radial-gradient(900px 500px at 0% 110%, var(--peach) 0%, transparent 55%),
+  background: radial-gradient(1200px 600px at 85% -15%, var(--teal) 0%, transparent 60%),
+              radial-gradient(1100px 700px at -10% 120%, var(--peach) 0%, transparent 65%),
               var(--cream);
   padding: 80px 0 88px;
 }
 .hero-grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 48px; align-items: center; }
 .hero p.lead { font-size: 1.15rem; color: var(--ink-soft); max-width: 34ch; }
-.hero-badge {
-  display: inline-flex; align-items: center; gap: 8px;
-  background: var(--white); color: var(--blue-dark);
-  font-weight: 600; font-size: 0.85rem;
-  padding: 7px 14px; border-radius: 999px; box-shadow: var(--shadow-sm);
-  margin-bottom: 18px;
-}
 .hero-cta { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 24px; }
 .hero-art {
   background: var(--white);
@@ -143,9 +137,9 @@ img, svg { max-width: 100%; display: block; }
 .pillar {
   background: var(--white); border-radius: var(--radius);
   padding: 28px; box-shadow: var(--shadow-sm);
-  border-top: 4px solid var(--teal);
+  border-top: 4px solid var(--peach);
 }
-.pillar .ico { width: 52px; height: 52px; border-radius: 14px; background: var(--cream); display: grid; place-items: center; margin-bottom: 14px; }
+.pillar .ico { width: 52px; height: 52px; border-radius: 14px; background: var(--peach-soft); display: grid; place-items: center; margin-bottom: 14px; }
 .pillar h3 { margin-bottom: 6px; }
 
 /* ---------- Services ---------- */
@@ -156,7 +150,7 @@ img, svg { max-width: 100%; display: block; }
   border: 1px solid rgba(155, 206, 193, 0.4);
   display: flex; flex-direction: column;
 }
-.card .ico { width: 48px; height: 48px; border-radius: 12px; background: var(--cream); display: grid; place-items: center; margin-bottom: 14px; }
+.card .ico { width: 48px; height: 48px; border-radius: 12px; background: var(--peach-soft); display: grid; place-items: center; margin-bottom: 14px; }
 .card h3 { margin-bottom: 6px; }
 .card ul { margin: 0 0 16px; padding-left: 18px; color: var(--ink-soft); font-size: 0.95rem; }
 .card .price { font-family: var(--font-head); font-weight: 700; color: var(--blue); font-size: 1.3rem; margin-top: auto; }
@@ -164,7 +158,7 @@ img, svg { max-width: 100%; display: block; }
 
 /* ---------- Pricing note banner ---------- */
 .banner {
-  background: linear-gradient(120deg, var(--blue) 0%, var(--teal) 100%);
+  background: linear-gradient(120deg, var(--peach) 0%, var(--teal) 100%);
   color: var(--white); border-radius: var(--radius);
   padding: 30px 34px; display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap;
 }
@@ -219,7 +213,7 @@ img, svg { max-width: 100%; display: block; }
 .form-status.err { display: block; background: #fde8e3; color: #b23b22; }
 .contact-info { background: var(--white); border-radius: var(--radius); padding: 30px; box-shadow: var(--shadow-sm); }
 .contact-info .row { display: flex; gap: 14px; align-items: flex-start; margin-bottom: 18px; }
-.contact-info .ico { flex: 0 0 44px; height: 44px; border-radius: 12px; background: var(--cream); display: grid; place-items: center; }
+.contact-info .ico { flex: 0 0 44px; height: 44px; border-radius: 12px; background: var(--peach-soft); display: grid; place-items: center; }
 .contact-info h4 { margin: 0 0 2px; font-size: 1rem; }
 .contact-info p { margin: 0; color: var(--ink-soft); }
 
